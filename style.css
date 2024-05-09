@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #000;
+    box-sizing: border-box;
+}
+body {
+    scrollbar-color: #333 #000;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.776);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: rgba(0, 166, 133, 0.788);
+}
+.half-header-1{
+    width: 40vw;
+}
+.half-header-2{
+    width: calc(100% - 40vw);
+}
+.svg{
+    filter: invert(1);
+}
+#logo{
+    height: 75px;
+    width: 150px;
+}
+input[type="text"]{
+    border: none;
+    background: transparent;
+    height: 40px;
+    width:  200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 0px 10px 0px 70px;
+}
+input[type="text"]::placeholder{
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    color: black;
+    font-size: 15px;
+    /* padding-left: 70px; */
+}
+input[type="text"]:focus{
+    border: transparent;
+    outline: 2px solid rgb(165, 165, 165);
+}
+.half-header-2 ul{
+    position: relative;
+}
+button{
+    position: absolute;
+    left: calc(28% + 5px);
+    top: 30px;
+    background: transparent;
+    border: none;
+}
+.half-header-2 ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.half-header-2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(28, 100, 76);
+}
+ul{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertical{
+    height: 35px;
+    border: 1px solid rgba(222, 222, 222, 0.567);
+}
+.album img{
+    width: 200px;
+}
+.controls > *{
+    cursor: pointer;
+    width: 50px;
+}
+.controls > *:hover{
+    background-color: rgb(0, 115, 124);
+    border-radius: 50px;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000; /* Blackish background color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Darker color for thumb */
+    border-radius: 5px;
+  }
